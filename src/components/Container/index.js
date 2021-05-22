@@ -1,17 +1,43 @@
 import React, { Component } from "react";
 import ContentController from "../ContentController/index";
 import ShowAll from "../ShowAll/index";
+import ProfileCard from "../ProfileCard/index";
+import employees from "../employees.json";
+import "./style.css"
 
 class Container extends Component {
     state = {
-        controller: "Show All"
+        currentController: "Show All",
+        employees
     };
 
+    handleControllerChange = controller => {
+        this.setState({ currentController: controller });
+    };
+
+    renderFilter(filter) {
+        return (
+            <div class="card-columns">
+                {this.state.employees.filter(person => person.gender === filter ).map(employee => (
+                    <ProfileCard
+                        photo={employee.photo}
+                        name={employee.name}
+                        email={employee.email}
+                        phone={employee.phone}
+                    />
+                ))}
+            </div>
+        )
+    }
+
     renderEmployees = () => {
-        if (this.state.controller === "Show All") {
+        if (this.state.currentController === "Show All") {
             return <ShowAll />;
         }
-    }
+        else if (this.state.currentController === "Female" || this.state.currentController === "Male" || this.state.currentController === "Non-Binary") {
+            this.renderFilter(this.state.currentController);
+        }
+    };
 
     render() {
         return (
@@ -21,7 +47,9 @@ class Container extends Component {
                 </nav>
                 <div class="row">
                     <div class="col">
-                        <ContentController                             
+                        <ContentController  
+                            currentController={this.state.currentController}
+                            handleControllerChange={this.handleControllerChange}                           
                         />
                     </div>
                 </div>
