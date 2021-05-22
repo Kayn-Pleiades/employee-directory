@@ -3,8 +3,7 @@
         "id": 1,
         "name": "Rebecca Reyes",
         "email": "rebecca.reyes@example.com",
-        "birthday": "2/5/1991",
-        "number": "(611)-339-1509"
+        "phone": "(611)-339-1509"
 
     }
 ]

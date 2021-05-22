@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ProfileCard from "./components/profileCard";
 import employees from "./employees.json";
 
 class App extends Component {
@@ -15,9 +16,11 @@ class App extends Component {
         <div class="row">
           <div class="col">
             {this.state.employees.map(employee => (
-              <p>
-                {employee.name}
-              </p>
+              <ProfileCard
+                name={employee.name}
+                email={employee.email}
+                phone={employee.phone}
+              />
             ))}
           </div>
         </div>
