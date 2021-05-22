@@ -4,13 +4,14 @@ import ShowAll from "../ShowAll/index";
 
 class Container extends Component {
     state = {
-        controller: {}
+        controller: "Show All"
     };
 
-    handleControllerChange = event => {
-        event.preventDefault();
-        
-    };
+    renderEmployees = () => {
+        if (this.state.controller === "Show All") {
+            return <ShowAll />;
+        }
+    }
 
     render() {
         return (
@@ -20,15 +21,13 @@ class Container extends Component {
                 </nav>
                 <div class="row">
                     <div class="col">
-                        <ContentController 
-                            value={this.state.controller}
-                            handleControllerChange={this.handleControllerChange}
+                        <ContentController                             
                         />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <ShowAll />
+                        {this.renderEmployees()}
                     </div>
                 </div>
             </div>
