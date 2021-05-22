@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ContentController from "../ContentController/index";
-import ShowAll from "../ShowAll/index";
 import ProfileCard from "../ProfileCard/index";
 import employees from "../employees.json";
 import "./style.css"
@@ -32,7 +31,18 @@ class Container extends Component {
 
     renderEmployees = () => {
         if (this.state.currentController === "Show All") {
-            return <ShowAll />;
+            return(
+                <div class="card-columns">
+                    {this.state.employees.map(employee => (
+                        <ProfileCard
+                            photo={employee.photo}
+                            name={employee.name}
+                            email={employee.email}
+                            phone={employee.phone}
+                        />
+                    ))}
+                </div>
+            )
         }
         else if (this.state.currentController === "Female" || this.state.currentController === "Male" || this.state.currentController === "Non-Binary") {
             this.renderFilter(this.state.currentController);
