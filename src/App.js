@@ -1,42 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 import ContentController from "./components/ContentController/index";
-import ProfileCard from "./components/ProfileCard/index";
-import employees from "./employees.json";
+import ShowAll from "./components/ShowAll/index";
 import "./App.css";
 
-class App extends Component {
-  state = {
-    employees
-  };
-
-  render() {
-    return (
-      <div class="container">
-        <nav class="navbar navbar-light bg-light">
-          <span class="navbar-brand mb-0 h1">Employee Directory</span>
-        </nav>
-        <div class="row">
-          <div class="col">
-            <ContentController />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="card-columns">
-              {this.state.employees.map(employee => (
-                <ProfileCard
-                  photo={employee.photo}
-                  name={employee.name}
-                  email={employee.email}
-                  phone={employee.phone}
-                />
-              ))}
-            </div>
-          </div>
+function App() {
+  return (
+    <div class="container">
+      <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Employee Directory</span>
+      </nav>
+      <div class="row">
+        <div class="col">
+          <ContentController />
         </div>
       </div>
-    );
-  }
+      <div class="row">
+        <div class="col">
+          <ShowAll />
+        </div>
+      </div>
+    </div>
+  );
+
 }
 
 export default App;
