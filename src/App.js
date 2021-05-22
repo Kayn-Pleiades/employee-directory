@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ContentController from "./components/ContentController/index";
 import ProfileCard from "./components/ProfileCard/index";
 import employees from "./employees.json";
 import "./App.css";
@@ -14,6 +15,11 @@ class App extends Component {
         <nav class="navbar navbar-light bg-light">
           <span class="navbar-brand mb-0 h1">Employee Directory</span>
         </nav>
+        <div class="row">
+          <div class="col">
+            <ContentController />
+          </div>
+        </div>
         <div class="row">
           <div class="col">
             <div class="card-columns">
