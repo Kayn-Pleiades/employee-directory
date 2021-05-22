@@ -14,21 +14,6 @@ class Container extends Component {
         this.setState({ currentController: controller });
     };
 
-    renderFilter(filter) {
-        return (
-            <div class="card-columns">
-                {this.state.employees.filter(person => person.gender === filter ).map(employee => (
-                    <ProfileCard
-                        photo={employee.photo}
-                        name={employee.name}
-                        email={employee.email}
-                        phone={employee.phone}
-                    />
-                ))}
-            </div>
-        )
-    }
-
     renderEmployees = () => {
         if (this.state.currentController === "Show All") {
             return(
@@ -45,7 +30,18 @@ class Container extends Component {
             )
         }
         else if (this.state.currentController === "Female" || this.state.currentController === "Male" || this.state.currentController === "Non-Binary") {
-            this.renderFilter(this.state.currentController);
+            return(
+                <div class="card-columns">
+                    {this.state.employees.filter(person => person.gender === this.state.currentController ).map(employee => (
+                        <ProfileCard
+                            photo={employee.photo}
+                            name={employee.name}
+                            email={employee.email}
+                            phone={employee.phone}
+                        />
+                    ))}
+                </div>
+            )
         }
         else {
             return(
