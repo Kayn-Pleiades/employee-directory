@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse'
-import GenderFilter from "../GenderFilter/index";
+import Dropdown from 'react-bootstrap/Dropdown';
 
 
-function ToggleButton() {
+function ToggleButton(props) {
     const [open1, setOpen] = useState(false);
     const [open2, setOpen2] = useState(false);
 
@@ -26,7 +26,17 @@ function ToggleButton() {
             </Button>
             <Collapse in={open1}>
                 <div id="filter">
-                    <GenderFilter />
+                    <Dropdown>
+                        <Dropdown.Toggle variant="success" id="dropdown-basic">
+                            Gender
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item onClick={props.girlsOnly}>Female</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Male</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Non-Binary</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </div>
             </Collapse>
             <Collapse in={open2}>

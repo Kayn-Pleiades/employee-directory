@@ -1,7 +1,7 @@
 import React from "react";
 import Dropdown from 'react-bootstrap/Dropdown';
 
-function GenderFilter() {
+function GenderFilter(props) {
     return (
         <Dropdown>
             <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -9,7 +9,7 @@ function GenderFilter() {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Female</Dropdown.Item>
+                <Dropdown.Item onClick={props.girlsOnly}>Female</Dropdown.Item>
                 <Dropdown.Item href="#/action-2">Male</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">Non-Binary</Dropdown.Item>
             </Dropdown.Menu>
