@@ -9,7 +9,7 @@ function ContentController(props) {
 
     return (
         <div>
-            <button type="button" class="btn btn-primary" onClick={props.handleControllerChange}>Show All</button>
+            <button type="button" class="btn btn-primary" onClick={() => props.handleControllerChange("Show All")} id={props.currentController === "Show All"}>Show All</button>
             <Button
                 onClick={() => setOpen(!open1)}
                 aria-controls="filter"
@@ -32,9 +32,9 @@ function ContentController(props) {
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
-                            <Dropdown.Item onClick={props.handleControllerChange}>Female</Dropdown.Item>
-                            <Dropdown.Item onClick={props.handleControllerChange}>Male</Dropdown.Item>
-                            <Dropdown.Item onClick={props.handleControllerChange}>Non-Binary</Dropdown.Item>
+                            <Dropdown.Item onClick={() => props.handleControllerChange("Female")} id={props.currentController === "Female"}>Female</Dropdown.Item>
+                            <Dropdown.Item onClick={() => props.handleControllerChange("Male")} id={props.currentController === "Male"}>Male</Dropdown.Item>
+                            <Dropdown.Item onClick={() => props.handleControllerChange("Non-Binary")} id={props.currentController === "Non-Binary"}>Non-Binary</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </div>

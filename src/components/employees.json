@@ -5,7 +5,7 @@
         "email": "rebecca.reyes@example.com",
         "phone": "(611)-339-1509",
         "birthday": "2/5/1991",
-        "gender": "female",
+        "gender": "Female",
         "photo": "https://randomuser.me/api/portraits/women/91.jpg"
 
     },
@@ -15,7 +15,7 @@
         "email": "barry.fisher@example.com",
         "phone": "(419)-292-7916",
         "birthday": "6/4/1994",
-        "gender": "male",
+        "gender": "Male",
         "photo": "https://randomuser.me/api/portraits/men/43.jpg"
     },
     {
@@ -24,7 +24,7 @@
         "email": "Denise Adams@example.com",
         "phone": "(590)-010-4793",
         "birthday": "11/4/1952",
-        "gender": "female",
+        "gender": "Female",
         "photo": "https://randomuser.me/api/portraits/women/31.jpg"
 
     },
@@ -34,7 +34,7 @@
         "email": "debra.patterson@example.com",
         "phone": "(499)-969-2398",
         "birthday": "4/5/1982",
-        "gender": "female",
+        "gender": "Female",
         "photo": "https://randomuser.me/api/portraits/women/92.jpg"
     },
     {
@@ -43,7 +43,7 @@
         "email": "dawn.harvey@example.com",
         "phone": "(346)-818-8397",
         "birthday": "9/6/1985",
-        "gender": "female",
+        "gender": "Female",
         "photo": "https://randomuser.me/api/portraits/women/43.jpg"
 
     },
@@ -53,7 +53,7 @@
         "email": "arron.alexander@example.com",
         "phone": "(204)-381-4627",
         "birthday": "8/2/1973",
-        "gender": "male",
+        "gender": "Male",
         "photo": "https://randomuser.me/api/portraits/men/22.jpg"
     },
     {
@@ -62,7 +62,7 @@
         "email": "Bob Tucker@example.com",
         "phone": "(408)-617-1524",
         "birthday": "8/6/1969",
-        "gender": "male",
+        "gender": "Male",
         "photo": "https://randomuser.me/api/portraits/men/53.jpg"
 
     },
@@ -72,7 +72,7 @@
         "email": "billie.stephens@example.com",
         "phone": "(730)-330-8827",
         "birthday": "3/5/1986",
-        "gender": "nonbinary",
+        "gender": "Non-Binary",
         "photo": "https://randomuser.me/api/portraits/women/27.jpg"
     }
 ]

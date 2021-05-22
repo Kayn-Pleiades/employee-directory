@@ -62,7 +62,8 @@ class Container extends Component {
                 </nav>
                 <div class="row">
                     <div class="col">
-                        <ContentController  
+                        <ContentController
+                            currentController={this.state.currentController}  
                             handleControllerChange={this.handleControllerChange}                           
                         />
                     </div>
