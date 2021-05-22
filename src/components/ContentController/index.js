@@ -1,11 +1,11 @@
 import React from "react";
-import FilterButton from "../FilterButton/index";
+import ToggleButtons from "../ToggleButtons/index";
 
 function ContentController() {
     return (
         <div>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <FilterButton />
+            <button type="button" class="btn btn-primary">Show All</button>
+            <ToggleButtons />
         </div>
     )
 }
