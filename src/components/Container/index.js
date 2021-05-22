@@ -47,6 +47,11 @@ class Container extends Component {
         else if (this.state.currentController === "Female" || this.state.currentController === "Male" || this.state.currentController === "Non-Binary") {
             this.renderFilter(this.state.currentController);
         }
+        else {
+            return(
+                <p>oops</p>
+            )
+        }
     };
 
     render() {
@@ -58,7 +63,6 @@ class Container extends Component {
                 <div class="row">
                     <div class="col">
                         <ContentController  
-                            currentController={this.state.currentController}
                             handleControllerChange={this.handleControllerChange}                           
                         />
                     </div>
