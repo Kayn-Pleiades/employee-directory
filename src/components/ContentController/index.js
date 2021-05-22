@@ -9,7 +9,7 @@ function ContentController(props) {
 
     return (
         <div>
-            <button type="button" class="btn btn-primary">Show All</button>
+            <button type="button" class="btn btn-primary" onClick={props.handleControllerChange} id={props.currentController === "Show All"}>Show All</button>
             <Button
                 onClick={() => setOpen(!open1)}
                 aria-controls="filter"
