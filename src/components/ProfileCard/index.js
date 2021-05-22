@@ -5,7 +5,7 @@ import "./style.css";
 
 function profileCard(props) {
     return (
-        <div class="card mt-5">
+        <div class="card">
             <div className="img-container">
                 <img class="card-img-top rounded-circle border border-light" src={props.photo} alt="Employee"></img>
             </div>

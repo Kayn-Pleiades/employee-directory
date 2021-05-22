@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ProfileCard from "./components/ProfileCard/index";
 import employees from "./employees.json";
+import "./App.css";
 
 class App extends Component {
   state = {

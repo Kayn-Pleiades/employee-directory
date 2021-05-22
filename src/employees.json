@@ -17,5 +17,62 @@
         "birthday": "6/4/1994",
         "gender": "male",
         "photo": "https://randomuser.me/api/portraits/men/43.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Denise Adams",
+        "email": "Denise Adams@example.com",
+        "phone": "(590)-010-4793",
+        "birthday": "11/4/1952",
+        "gender": "female",
+        "photo": "https://randomuser.me/api/portraits/women/31.jpg"
+
+    },
+    {
+        "id": 4,
+        "name": "Debra Patterson",
+        "email": "debra.patterson@example.com",
+        "phone": "(499)-969-2398",
+        "birthday": "4/5/1982",
+        "gender": "female",
+        "photo": "https://randomuser.me/api/portraits/women/92.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Dawn Harvey",
+        "email": "dawn.harvey@example.com",
+        "phone": "(346)-818-8397",
+        "birthday": "9/6/1985",
+        "gender": "female",
+        "photo": "https://randomuser.me/api/portraits/women/43.jpg"
+
+    },
+    {
+        "id": 6,
+        "name": "Arron Alexander",
+        "email": "arron.alexander@example.com",
+        "phone": "(204)-381-4627",
+        "birthday": "8/2/1973",
+        "gender": "male",
+        "photo": "https://randomuser.me/api/portraits/men/22.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Bob Tucker",
+        "email": "Bob Tucker@example.com",
+        "phone": "(408)-617-1524",
+        "birthday": "8/6/1969",
+        "gender": "male",
+        "photo": "https://randomuser.me/api/portraits/men/53.jpg"
+
+    },
+    {
+        "id": 8,
+        "name": "Billie Stephens",
+        "email": "billie.stephens@example.com",
+        "phone": "(730)-330-8827",
+        "birthday": "3/5/1986",
+        "gender": "nonbinary",
+        "photo": "https://randomuser.me/api/portraits/women/27.jpg"
     }
 ]
