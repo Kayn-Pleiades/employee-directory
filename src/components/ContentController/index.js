@@ -32,9 +32,9 @@ function ContentController(props) {
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
-                            <Dropdown.Item onClick={props.handleControllerChange("Female")} class={props.currentController === "Female"}>Female</Dropdown.Item>
-                            <Dropdown.Item onClick={props.handleControllerChange("Male")} class={props.currentController === "Male"}>Male</Dropdown.Item>
-                            <Dropdown.Item onClick={props.handleControllerChange("Non-Binary")} class={props.currentController === "Non-Binary"}>Non-Binary</Dropdown.Item>
+                            <Dropdown.Item onClick={props.handleControllerChange} class={props.currentController === "Female"}>Female</Dropdown.Item>
+                            <Dropdown.Item onClick={props.handleControllerChange} class={props.currentController === "Male"}>Male</Dropdown.Item>
+                            <Dropdown.Item onClick={props.handleControllerChange} class={props.currentController === "Non-Binary"}>Non-Binary</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </div>
