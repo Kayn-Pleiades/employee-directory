@@ -1,4 +1,6 @@
 import React from "react";
+import { EnvelopeFill } from 'react-bootstrap-icons';
+import { TelephoneFill } from 'react-bootstrap-icons';
 
 function profileCard(props) {
     return (
@@ -6,8 +8,8 @@ function profileCard(props) {
             <div class="card-body">
                 <h5 class="card-title text-center">{props.name}</h5>
                 <ul class="list-group">
-                    <li class="list-group-item"><i class="bi bi-envelope-fill"></i>{props.email}</li>
-                    <li class="list-group-item"><i class="bi bi-telephone-fill"></i>{props.phone}</li>
+                    <li class="list-group-item"><EnvelopeFill></EnvelopeFill> {props.email}</li>
+                    <li class="list-group-item"><TelephoneFill></TelephoneFill> {props.phone}</li>
                 </ul>
             </div>
         </div>

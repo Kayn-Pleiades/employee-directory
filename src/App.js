@@ -15,13 +15,15 @@ class App extends Component {
         </nav>
         <div class="row">
           <div class="col">
-            {this.state.employees.map(employee => (
-              <ProfileCard
-                name={employee.name}
-                email={employee.email}
-                phone={employee.phone}
-              />
-            ))}
+            <div class="card-columns">
+              {this.state.employees.map(employee => (
+                <ProfileCard
+                  name={employee.name}
+                  email={employee.email}
+                  phone={employee.phone}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
