@@ -1,0 +1,14 @@
+.card {
+    width: 325px;
+}
+
+.card > .img-container {
+    height: 60%;
+    overflow: hidden;
+    text-align: center;
+    background:#CCE2CB;
+}
+
+.card > .img-container > img {
+    width: 40%;
+}
