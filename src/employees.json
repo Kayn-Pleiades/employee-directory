@@ -3,7 +3,19 @@
         "id": 1,
         "name": "Rebecca Reyes",
         "email": "rebecca.reyes@example.com",
-        "phone": "(611)-339-1509"
+        "phone": "(611)-339-1509",
+        "birthday": "2/5/1991",
+        "gender": "female",
+        "photo": "https://randomuser.me/api/portraits/women/91.jpg"
 
+    },
+    {
+        "id": 2,
+        "name": "Barry Fisher",
+        "email": "barry.fisher@example.com",
+        "phone": "(419)-292-7916",
+        "birthday": "6/4/1994",
+        "gender": "male",
+        "photo": "https://randomuser.me/api/portraits/men/43.jpg"
     }
 ]
