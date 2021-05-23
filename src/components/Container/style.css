@@ -1,4 +1,8 @@
-.card-columns {
-    column-count: 4;
-}
-  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ .row > div[class*='col-'] {
+   display: flex;
+ }

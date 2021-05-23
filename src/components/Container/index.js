@@ -33,7 +33,7 @@ class Container extends Component {
     renderEmployees = () => {
         if (this.state.currentController === "Show All") {
             return(
-                <div class="card-columns">
+                <div class="col-sm-12">
                     {this.state.employees.map(employee => (
                         <ProfileCard
                             photo={employee.photo}
