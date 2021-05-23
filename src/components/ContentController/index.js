@@ -5,7 +5,6 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 function ContentController(props) {
     const [open1, setOpen] = useState(false);
-    const [open2, setOpen2] = useState(false);
 
     return (
         <div>
@@ -17,13 +16,16 @@ function ContentController(props) {
             >
                 Filter
             </Button>
-            <Button
-                onClick={() => setOpen2(!open2)}
-                aria-controls="Sort"
-                aria-expanded={open2}
-            >
-                Sort
-            </Button>
+            <Dropdown>
+                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                    Sort
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                    <Dropdown.Item onClick={() => props.handleSort("First")} id={props.currentSort === "First"}>By Name</Dropdown.Item>
+                    <Dropdown.Item onClick={() => props.handleSort("id")} id={props.currentSort === "id"}>Un-Sort</Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
             <Collapse in={open1}>
                 <div id="filter">
                     <Dropdown>
@@ -37,11 +39,6 @@ function ContentController(props) {
                             <Dropdown.Item onClick={() => props.handleControllerChange("Non-Binary")} id={props.currentController === "Non-Binary"}>Non-Binary</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                </div>
-            </Collapse>
-            <Collapse in={open2}>
-                <div id="sort">
-                    <p> Sorting </p>
                 </div>
             </Collapse>
         </div>
